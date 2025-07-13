@@ -16,14 +16,15 @@
       <a-sphere></a-sphere>
     </template>
 
+    <a-asset-item id="chair-model" src="./assets/models/chair.glb"></a-asset-item>
+
     <template id="sphere-template">
       <a-entity
         class="cantap"
-        geometry="primitive: box"
+        gltf-model="#chair-model"
         position="0 0.5 0"
-        material="
-        color: #AD50FF; shader: flat; 
-        src: https://cdn.8thwall.com/web/assets/cube-texture.png"
+        scale="1 1 1"
+        rotation="0 0 0"
         color-changer></a-entity>
     </template>
   </a-assets>
